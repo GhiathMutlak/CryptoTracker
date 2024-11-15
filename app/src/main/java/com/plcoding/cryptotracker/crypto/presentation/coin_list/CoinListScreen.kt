@@ -19,9 +19,13 @@ import com.plcoding.cryptotracker.ui.theme.CryptoTrackerTheme
 
 @Composable
 fun CoinListScreenRoot(
-
+    modifier: Modifier = Modifier,
+    state: CoinListState,
 ) {
-
+    CoinListScreen(
+        modifier = modifier,
+        state = state
+    )
 }
 
 @Composable
